@@ -2,8 +2,7 @@ import React from 'react'
 
 export default function Menu() {
     return (
-        <div>
-            {/* Main Sidebar Container */}
+ 
             <aside className="main-sidebar sidebar-dark-primary elevation-4">
                 {/* Brand Logo */}
                 <a href="index3.html" className="brand-link">
@@ -65,6 +64,6 @@ export default function Menu() {
                 {/* /.sidebar */}
             </aside>
 
-        </div>
+      
     )
 }
