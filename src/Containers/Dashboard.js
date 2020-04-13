@@ -10,7 +10,7 @@ export default function Dashboard() {
             <Header />
             <Menu />
             <Content />
-            <ControlSideBar />
+            {/* <ControlSideBar /> */}
             <Footer />
         </div>
     )

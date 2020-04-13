@@ -66,7 +66,7 @@ export default function Menu() {
                                 <i className="nav-icon fas fa-th" />
                                 <p>
                                     Simple Link
-              <span className="right badge badge-danger">New</span>
+                                 <span className="right badge badge-danger">New</span>
                                 </p>
                             </a>
                         </li>
