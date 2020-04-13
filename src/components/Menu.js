@@ -4,7 +4,7 @@ import {
     Switch,
     Route,
     Link
-  } from "react-router-dom";
+} from "react-router-dom";
 export default function Menu() {
     return (
         <aside className="main-sidebar sidebar-dark-primary elevation-4">
@@ -21,7 +21,7 @@ export default function Menu() {
                         <img src="dist/img/user2-160x160.jpg" className="img-circle elevation-2" alt="User Image" />
                     </div>
                     <div className="info">
-                        <a href="#" className="d-block">Alexander Pierce</a>
+                        <Link to="/" className="d-block">Alexander Pierce</Link>
                     </div>
                 </div>
                 {/* Sidebar Menu */}
@@ -30,10 +30,19 @@ export default function Menu() {
                         {/* Add icons to the links using the .nav-icon class
          with font-awesome or any other icon font library */}
                         <li className="nav-item">
-                            <Link  to="/sectionYear" className="nav-link">
+                            <Link to="/sectionyear" className="nav-link">
                                 <i className="nav-icon fas fa-th" />
                                 <p>
                                     จัดการปีการศึกษา
+                                <span className="right badge badge-danger">New</span>
+                                </p>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/student" className="nav-link">
+                                <i className="nav-icon fas fa-child " />
+                                <p>
+                                    จัดการนักเรียน
                                 <span className="right badge badge-danger">New</span>
                                 </p>
                             </Link>
@@ -48,27 +57,27 @@ export default function Menu() {
                             </a>
                             <ul className="nav nav-treeview">
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link">
+                                    <Link to="/Dashboard" className="nav-link">
                                         <i className="far fa-circle nav-icon" />
                                         <p>ปีการศึกษา</p>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <a href="#" className="nav-link">
+                                    <Link to="/Admin" className="nav-link">
                                         <i className="far fa-circle nav-icon" />
                                         <p>Inactive Page</p>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
                         </li>
                         <li className="nav-item">
-                            <a href="#" className="nav-link">
+                            <Link to="/User" href="#" className="nav-link">
                                 <i className="nav-icon fas fa-th" />
                                 <p>
                                     Simple Link
                                  <span className="right badge badge-danger">New</span>
                                 </p>
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </nav>

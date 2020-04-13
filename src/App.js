@@ -1,36 +1,95 @@
-import React, { Component } from 'react';
-import Dashboard from '../src/Containers/Dashboard'
-import SectionYear from './Containers/SectionYear'
-// import CreateSection from './Containers/Create'
+import React from "react";
 import {
   BrowserRouter as Router,
+  Switch,
   Route,
-  BrowserRouter,
-  Switch
-} from 'react-router-dom'
-
-class App extends Component {
-  renderRouter() {
-    return (
-      <Router basename="/">
-        <Switch>
-          <Route exact path="/" component={Dashboard} />
-          <Route exact path="/sectionYear" component={SectionYear} />
-          {/* <Route exact path="/sectionYear/create" component={CreateSection} /> */}
-          {/* <Route exact path="/login" component={Login} />
-          <Route path="/" component={Home} />
-          <Route component={NotFound} /> */}
-        </Switch>
-      </Router>
-    )
-  }
-  render() {
-    return (
-      <div>
-        <BrowserRouter>{this.renderRouter()}</BrowserRouter>
+  Link
+} from "react-router-dom";
+import Menu from "./components/Menu";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Content from "./components/Content";
+import ShowSection from "./Containers/Section/ShowSection";
+import SectionCreate from "./Containers/Section/SectionCreate";
+import Student from './Containers/Student'
+import StudentAdd from './Containers/Student/StudentAdd'
+export default function BasicExample() {
+  return (
+    <Router>
+      <div className='wrapper'>
+        <Header />
+        <Menu />
+        <Content>
+          <Switch>
+            <Route exact path="/login" component={Login} />
+            <Route exact path="/" component={Home} />
+          </Switch>
+        </Content>
+        <Footer />
       </div>
-    );
-  }
+    </Router>
+  );
 }
 
-export default App;
+function Home() {
+  return (
+    <div>
+      <h2>Home</h2>
+    </div>
+  );
+}
+
+function About() {
+  return (
+    <div>
+      <h2>About</h2>
+    </div>
+  );
+}
+
+function Dashboard() {
+  return (
+    <div>
+      <h2>Dashboard</h2>
+    </div>
+  );
+}
+function User() {
+  return (
+    <div>
+      <h2>User</h2>
+    </div>
+  );
+}
+function Admin() {
+  return (
+    <div>
+      <h2>Admin</h2>
+    </div>
+  );
+}
+function Create() {
+  return (
+    <div>
+      <h2>Create</h2>
+    </div>
+  );
+}
+function AdminUser() {
+  console.log("admin user");
+
+  return (
+    <div>
+      <h2>Admin User</h2>
+    </div>
+  );
+}
+function Login() {
+  console.log("admin user");
+
+  return (
+    <div>
+      <h2>Login</h2>
+    </div>
+  );
+}

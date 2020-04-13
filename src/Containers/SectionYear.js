@@ -16,17 +16,10 @@ export default class SectionYear extends React.Component {
     }
     render() {
         console.log("section year");
-
         return (
-            <div>
-                <Header />
-                <Menu />
-                <Content name="ปีการศึกษา">
-                    <SectionCreate/>
-                </Content>
-                <ControlSideBar />
-                <Footer />
-            </div>
+            <h1>
+                Section 1
+                </h1>
         )
     }
 }

@@ -6,14 +6,11 @@ import ControlSideBar from '../components/ControlSideBar';
 import Content from '../components/Content';
 export default function Dashboard() {
     return (
-        <div className="wrapper">
+        <div className='wrapper'>
             <Header />
             <Menu />
             <Content />
-            {/* <ControlSideBar /> */}
             <Footer />
         </div>
     )
 }
-
-

@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 import ContentHeader from '../../components/ContentHeader';
 import ContentBody from '../../components/ContentBody';
 import { Link } from "react-router-dom";
-
-export default function SectionCreate() {
-    return (
-        <div>
-            <ContentHeader name="ปีการศึกษา: เพิ่มปีการศึกษา" />
+export default class StudentAdd extends Component {
+    render() {
+        return (
+            <div>
+            <ContentHeader name="นักเรียน: เพิ่มนักเรียน" />
             <ContentBody>
 
                 <div className="col-md-12">
@@ -54,5 +54,6 @@ export default function SectionCreate() {
                 </div>
             </ContentBody>
         </div>
-    )
+        )
+    }
 }
