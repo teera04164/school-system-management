@@ -1,18 +1,36 @@
-import React from 'react'
-import Header from './components/Header';
-import Menu from './components/Menu';
-import Content from './components/Content';
-import Footer from './components/Footer';
-import ControlSideBar from './components/ControlSideBar';
+import React, { Component } from 'react';
+import Dashboard from '../src/Containers/Dashboard'
+import SectionYear from './Containers/SectionYear'
+// import CreateSection from './Containers/Create'
+import {
+  BrowserRouter as Router,
+  Route,
+  BrowserRouter,
+  Switch
+} from 'react-router-dom'
 
-export default function App() {
-  return (
-    <div className="wrapper">
-      <Header/>
-      <Menu/>
-      <Content/>
-      <Footer/>
-      <ControlSideBar/>
-    </div>
-  )
+class App extends Component {
+  renderRouter() {
+    return (
+      <Router basename="/">
+        <Switch>
+          <Route exact path="/" component={Dashboard} />
+          <Route exact path="/sectionYear" component={SectionYear} />
+          {/* <Route exact path="/sectionYear/create" component={CreateSection} /> */}
+          {/* <Route exact path="/login" component={Login} />
+          <Route path="/" component={Home} />
+          <Route component={NotFound} /> */}
+        </Switch>
+      </Router>
+    )
+  }
+  render() {
+    return (
+      <div>
+        <BrowserRouter>{this.renderRouter()}</BrowserRouter>
+      </div>
+    );
+  }
 }
+
+export default App;
