@@ -17,12 +17,17 @@ export default function BasicExample() {
   return (
     <Router>
       <div className='wrapper'>
+
         <Header />
         <Menu />
         <Content>
           <Switch>
-            <Route exact path="/login" component={Login} />
             <Route exact path="/" component={Home} />
+            <Route exact path="/Dashboard" component={Dashboard} />
+            <Route exact path="/sectionyear" component={ShowSection} />
+            <Route exact path="/sectionyear/create" component={SectionCreate} />
+            <Route exact path="/student" component={Student} />
+            <Route exact path="/student/add" component={StudentAdd} />
           </Switch>
         </Content>
         <Footer />
@@ -81,15 +86,6 @@ function AdminUser() {
   return (
     <div>
       <h2>Admin User</h2>
-    </div>
-  );
-}
-function Login() {
-  console.log("admin user");
-
-  return (
-    <div>
-      <h2>Login</h2>
     </div>
   );
 }
