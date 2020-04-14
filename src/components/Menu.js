@@ -19,6 +19,7 @@ export default class Menu extends Component {
         const handler = e => this.setState({ matches: e.matches });
         window.matchMedia("(min-width: 890px)").addListener(handler);
     }
+    
     removeClass = () => {
         console.log("sss", this.state.matches);
         if (!this.state.matches) {
