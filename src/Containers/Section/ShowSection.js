@@ -10,7 +10,7 @@ import ContentBody from "../../components/ContentBody";
 
 class ShowSection extends Component {
     render() {
-        console.log(this.props);
+        // console.log(this.props);
         return (
             <div>
                 <ContentHeader name="ปีการศึกษา" />
