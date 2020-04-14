@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import ContentHeader from '../../components/ContentHeader';
 import ContentBody from '../../components/ContentBody';
 import { Link } from "react-router-dom";
-export default class StudentAdd extends Component {
+export default class AttendenceAdd extends Component {
     render() {
         return (
             <div>
-                <ContentHeader name="นักเรียน: เพิ่มนักเรียน" />
+                <ContentHeader name="เช็คชื่อ: เพิ่มการเช็คชื่อ" />
                 <ContentBody>
 
                     <div className="col-md-12">
@@ -22,19 +22,13 @@ export default class StudentAdd extends Component {
                                     <div class="row">
                                         <div class="col-sm">
                                             <div className="form-group">
-                                                <label htmlFor="exampleInputEmail1">รหัสนักเรียน</label>
+                                                <label htmlFor="exampleInputEmail1">ชื่อ</label>
                                                 <input type="text" className="form-control" id="exampleInputEmail1" placeholder="Enter email" />
                                             </div>
                                         </div>
                                         <div class="col-sm">
                                             <div className="form-group">
-                                                <label htmlFor="exampleInputPassword1">เลขบัตรประชาชน</label>
-                                                <input type="text" className="form-control" id="exampleInputPassword1" placeholder="Password" />
-                                            </div>
-                                        </div>
-                                        <div class="col-sm">
-                                        <div className="form-group">
-                                                <label htmlFor="exampleInputPassword1">คำนำหน้า</label>
+                                                <label htmlFor="exampleInputPassword1">ประเภท</label>
                                                 <input type="text" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                                             </div>
                                         </div>
@@ -42,24 +36,18 @@ export default class StudentAdd extends Component {
                                     <div class="row">
                                         <div class="col-sm">
                                             <div className="form-group">
-                                                <label htmlFor="exampleInputEmail1">คำนำหน้า</label>
+                                                <label htmlFor="exampleInputEmail1">มอบหมาย</label>
                                                 <input type="text" className="form-control" id="exampleInputEmail1" placeholder="Enter email" />
                                             </div>
                                         </div>
                                         <div class="col-sm">
                                             <div className="form-group">
-                                                <label htmlFor="exampleInputPassword1">ชื่อ</label>
-                                                <input type="text" className="form-control" id="exampleInputPassword1" placeholder="Password" />
-                                            </div>
-                                        </div>
-                                        <div class="col-sm">
-                                        <div className="form-group">
-                                                <label htmlFor="exampleInputPassword1">นามสกุล</label>
+                                                <label htmlFor="exampleInputPassword1">ประเภท</label>
                                                 <input type="text" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                                             </div>
                                         </div>
                                     </div>
-                                    
+                                 
                                     <div className="form-check">
                                         <input type="checkbox" className="form-check-input" id="exampleCheck1" />
                                         <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>

@@ -31,7 +31,7 @@ export default function Header() {
                 <li className="nav-item dropdown">
                     <div className="nav-link" data-toggle="dropdown" href="#"  style={{ display: 'block' ,cursor:"pointer"}}>
                         {/* <img src="dist/img/user2-160x160.jpg" className="img-circle elevation-2" alt="User Image" style={{ width: '3rem', marginLeft: '.7rem', marginRight: '1.5rem' }} /> */}
-                        <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image" style={{ width: '2.5rem', marginLeft: '-0.3rem', marginRight: '-0.5rem' ,marginTop: '-0.6rem'}} />
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle " alt="User Image" style={{ width: '2.5rem', marginLeft: '-0.3rem', marginRight: '0rem' ,marginTop: '-0.6rem'}} />
                     </div>
                     <div className="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                         <span className="dropdown-header">15 Notifications</span>

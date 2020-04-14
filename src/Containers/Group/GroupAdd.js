@@ -1,40 +1,40 @@
-import React from 'react'
+import React, { Component } from 'react'
 import ContentHeader from '../../components/ContentHeader';
 import ContentBody from '../../components/ContentBody';
 import { Link } from "react-router-dom";
+export default class GroupAdd extends Component {
+    render() {
+        return (
+            <div>
+                <ContentHeader name="กลุ่ม: เพิ่มกลุ่ม" />
+                <ContentBody>
 
-export default function SectionCreate() {
-    return (
-        <div>
-            <ContentHeader name="ปีการศึกษา: เพิ่มปีการศึกษา" />
-            <ContentBody>
-
-                <div className="col-md-12">
-                    {/* general form elements */}
-                    <div className="card card-primary">
-                        <div className="card-header" style={{ padding: "0.1rem 1.25rem" }}>
-                            <h3 className="card-title"></h3>
-                        </div>
-                        {/* /.card-header */}
-                        {/* form start */}
-                        <form role="form">
-                            <div className="card-body">
-                            <div class="row">
+                    <div className="col-md-12">
+                        {/* general form elements */}
+                        <div className="card card-primary">
+                            <div className="card-header" style={{ padding: "0.1rem 1.25rem" }}>
+                                <h3 className="card-title"></h3>
+                            </div>
+                            {/* /.card-header */}
+                            {/* form start */}
+                            <form role="form">
+                                <div className="card-body">
+                                    <div class="row">
                                         <div class="col-sm">
                                             <div className="form-group">
-                                                <label htmlFor="exampleInputEmail1">ปีการศึกษา</label>
+                                                <label htmlFor="exampleInputEmail1">รหัสนักเรียน</label>
                                                 <input type="text" className="form-control" id="exampleInputEmail1" placeholder="Enter email" />
                                             </div>
                                         </div>
                                         <div class="col-sm">
                                             <div className="form-group">
-                                                <label htmlFor="exampleInputPassword1">เริ่มภาคการศึกษา</label>
+                                                <label htmlFor="exampleInputPassword1">เลขบัตรประชาชน</label>
                                                 <input type="text" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                                             </div>
                                         </div>
                                         <div class="col-sm">
                                         <div className="form-group">
-                                                <label htmlFor="exampleInputPassword1">สิ้นสุดภาคการศึกษา</label>
+                                                <label htmlFor="exampleInputPassword1">คำนำหน้า</label>
                                                 <input type="text" className="form-control" id="exampleInputPassword1" placeholder="Password" />
                                             </div>
                                         </div>
@@ -59,20 +59,22 @@ export default function SectionCreate() {
                                             </div>
                                         </div>
                                     </div>
-                                <div className="form-check">
-                                    <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-                                    <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
+                                    
+                                    <div className="form-check">
+                                        <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                                        <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
+                                    </div>
                                 </div>
-                            </div>
-                            {/* /.card-body */}
-                            <div className="card-footer">
-                                <Link to="/sectionyear" type="submit" className="btn btn-warning" style={{marginLeft:"0.5rem"}}><i class="fas fa-reply"></i> ย้อนกลับ</Link>
-                                <button type="submit" className="btn btn-primary"  style={{marginLeft:"0.5rem"}}><i class="fas fa-save"></i> บันทึก</button>
-                            </div>
-                        </form>
+                                {/* /.card-body */}
+                                <div className="card-footer">
+                                    <Link to="/student" type="submit" className="btn btn-warning" style={{ marginLeft: "0.5rem" }}><i class="fas fa-reply"></i> ย้อนกลับ</Link>
+                                    <button type="submit" className="btn btn-primary" style={{ marginLeft: "0.5rem" }}><i class="fas fa-save"></i> บันทึก</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                </div>
-            </ContentBody>
-        </div>
-    )
+                </ContentBody>
+            </div>
+        )
+    }
 }

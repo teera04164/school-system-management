@@ -25,7 +25,7 @@ class ShowSection extends Component {
                                 </div>
                                 <div className="col-xs-6" style={{ textAlign: 'end', marginTop: '1rem', marginRight: '1rem' }}>
                                     <button className="btn btn-primary" onClick={() => this.props.history.push("/sectionyear/create")}>
-                                        <i className="fa fa-plus">&nbsp;&nbsp;</i>เพิ่มปีการศึกษาใหม่</button>
+                                        <i className="fa fa-plus">&nbsp;&nbsp;</i>เพิ่มปีการศึกษา</button>
                                 </div>
                             </div>
 

@@ -19,7 +19,7 @@ export default class Menu extends Component {
         const handler = e => this.setState({ matches: e.matches });
         window.matchMedia("(min-width: 890px)").addListener(handler);
     }
-    
+
     removeClass = () => {
         console.log("sss", this.state.matches);
         if (!this.state.matches) {
@@ -37,11 +37,11 @@ export default class Menu extends Component {
 
     render() {
         return (
-            <aside className="main-sidebar sidebar-dark-primary elevation-4" ref={this.divRef}>
+            <aside className="main-sidebar sidebar-dark-primary" ref={this.divRef}>
                 {/* Brand Logo */}
                 <Link to="/" className="brand-link">
-                    <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{ opacity: '.8' }} />
-                    <span className="brand-text font-weight-light">AdminLTE 3</span>
+                    <img src="dist/img/lg09402001.jpg" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{ opacity: '.8' }} />
+                    <span className="brand-text font-weight-light">Smart PPM</span>
                 </Link>
                 {/* Sidebar */}
                 <div className="sidebar">
@@ -65,7 +65,7 @@ export default class Menu extends Component {
                                 <Link to="/sectionyear" className="nav-link" >
                                     <i className="nav-icon fas fa-th" />
                                     <p>
-                                        จัดการปีการศึกษา
+                                        ปีการศึกษา
                                 <span className="right badge badge-danger">New</span>
                                     </p>
                                 </Link>
@@ -74,7 +74,34 @@ export default class Menu extends Component {
                                 <Link to="/student" className="nav-link">
                                     <i className="nav-icon fas fa-child " />
                                     <p>
-                                        จัดการนักเรียน
+                                        นักเรียน
+                                <span className="right badge badge-danger">New</span>
+                                    </p>
+                                </Link>
+                            </li>
+                            <li className="nav-item" onClick={this.removeClass}>
+                                <Link to="/group" className="nav-link">
+                                    <i className="nav-icon fas fa-child " />
+                                    <p>
+                                        กลุ่ม
+                                <span className="right badge badge-danger">New</span>
+                                    </p>
+                                </Link>
+                            </li>
+                            <li className="nav-item" onClick={this.removeClass}>
+                                <Link to="/attendence" className="nav-link">
+                                    <i className="nav-icon fas fa-child " />
+                                    <p>
+                                        เช็คชื่อ
+                                <span className="right badge badge-danger">New</span>
+                                    </p>
+                                </Link>
+                            </li>
+                            <li className="nav-item" onClick={this.removeClass}>
+                                <Link to="/attendence" className="nav-link">
+                                    <i className="nav-icon fas fa-child " />
+                                    <p>
+                                        ความประพฤติ
                                 <span className="right badge badge-danger">New</span>
                                     </p>
                                 </Link>

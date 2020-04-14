@@ -9,7 +9,7 @@ export default class index extends Component {
     render() {
         return (
             <div>
-                <ContentHeader name="นักเรียน" />
+                <ContentHeader name="การเช็คชื่อ" />
                 <ContentBody>
                     <div class="col-md-12">
                         <div className="card card-primary">
@@ -32,8 +32,8 @@ export default class index extends Component {
                                     </div>
                                     <div className="col-sm-12 col-md-6" >
                                         <div className="form-group" style={{ textAlign: 'end', marginTop: '1rem', marginRight: '1rem' }}>
-                                        <button className="btn btn-primary" onClick={() => this.props.history.push("/student/add")}>
-                                        <i className="fa fa-plus">&nbsp;&nbsp;</i>เพิ่มนักเรียน</button>
+                                        <button className="btn btn-primary" onClick={() => this.props.history.push("/attendence/add")}>
+                                        <i className="fa fa-plus">&nbsp;&nbsp;</i>เพิ่มการเช็คชื่อ</button>
                                         </div>
                                     </div>
                                 </div>
@@ -53,28 +53,20 @@ export default class index extends Component {
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">รหัส</th>
-      <th scope="col">ชื่อ</th>
+      <th scope="col">รายการ</th>
+      <th scope="col">จำนวน</th>
       <th scope="col">นามสกุล</th>
       <th scope="col">Action</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row" style={{width: '2rem'}}></th>
-      <td  style={{width: '8rem'}}><input type="text" class="form-control" placeholder="Press enter to post comment"/></td>
-      <td><input type="text" class="form-control" placeholder="Press enter to post comment"/></td>
-      <td><input type="text" class="form-control" placeholder="Press enter to post comment"/></td>
-      <td>
-    </td>
-    </tr>
-    <tr>
       <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
+      <td>เข้าเเถวหน้าเสาธง ม.1/1</td>
+      <td>29</td>
       <td>@fat</td>
-      <td><button class="btn btn-default btn-xs m-r-5" style={{margin: ".2rem .2rem"}} data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-edit font-14"></i></button>
-          <button class="btn btn-default btn-xs m-r-5" style={{margin: ".2rem .2rem"}} data-toggle="tooltip" data-original-title="Edit"><i class="fa fa-eye font-14"></i></button>
+      <td><div class="btn btn-default btn-xs m-r-5" style={{margin: ".2rem .2rem"}} data-toggle="tooltip" data-original-title="Edit"><i class="far fa-calendar-check" style={{fontSize: '1.5rem'}}></i></div>
+          <div class="btn btn-default btn-xs m-r-5" style={{margin: ".2rem .2rem"}} data-toggle="tooltip" data-original-title="Edit"><i class="fas fa-edit" style={{fontSize: '1.4rem'}}></i></div>
     </td>
     </tr>
     <tr>

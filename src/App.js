@@ -13,6 +13,11 @@ import ShowSection from "./Containers/Section/ShowSection";
 import SectionCreate from "./Containers/Section/SectionCreate";
 import Student from './Containers/Student'
 import StudentAdd from './Containers/Student/StudentAdd'
+import Group from './Containers/Group'
+import GroupAdd from "./Containers/Group/GroupAdd";
+import NotFound from './Containers/NotFound'
+import Attendence from './Containers/Attendence'
+import AttendenceAdd from "./Containers/Attendence/AttendenceAdd";
 export default function BasicExample() {
   return (
     <Router>
@@ -28,6 +33,11 @@ export default function BasicExample() {
             <Route exact path="/sectionyear/create" component={SectionCreate} />
             <Route exact path="/student" component={Student} />
             <Route exact path="/student/add" component={StudentAdd} />
+            <Route exact path="/group" component={Group} />
+            <Route exact path="/group/add" component={GroupAdd} />
+            <Route exact path="/attendence" component={Attendence} />
+            <Route exact path="/attendence/add" component={AttendenceAdd} />
+            <Route exact path="*" component={NotFound} />
           </Switch>
         </Content>
         <Footer />
