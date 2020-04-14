@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { useMediaQuery } from 'react-responsive'
 
 import {
     BrowserRouter as Router,
@@ -10,10 +9,6 @@ import {
 
 const $ = window.$
 export default class Menu extends Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.divRef = React.createRef()
-    // }
 
     constructor(props) {
         super(props)
