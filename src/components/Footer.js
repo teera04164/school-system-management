@@ -5,7 +5,7 @@ export default function Footer() {
         <>
             <aside className="control-sidebar control-sidebar-dark">
             </aside>
-            <footer className="main-footer">
+            <footer className="main-footer text-sm">
                 {/* To the right */}
                 <div className="float-right d-none d-sm-inline">
                     Anything you want
