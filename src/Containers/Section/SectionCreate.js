@@ -66,7 +66,7 @@ export default function SectionCreate() {
                             </div>
                             {/* /.card-body */}
                             <div className="card-footer">
-                                <Link to="/sectionyear" type="submit" className="btn btn-warning" style={{marginLeft:"0.5rem"}}><i class="fas fa-reply"></i> ย้อนกลับ</Link>
+                                <Link to="/sectionyear" type="submit" className="btn btn-warning" style={{marginLeft:"0.5rem"}}><i class="fa fa-mail-reply"></i> ย้อนกลับ</Link>
                                 <button type="submit" className="btn btn-primary"  style={{marginLeft:"0.5rem"}}><i class="fas fa-save"></i> บันทึก</button>
                             </div>
                         </form>

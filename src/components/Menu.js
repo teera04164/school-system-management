@@ -41,7 +41,8 @@ export default class Menu extends Component {
                 {/* Brand Logo */}
                 <Link to="/" className="brand-link navbar-teal">
                     <img src="dist/img/lg09402001.jpg" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{ opacity: '.8' }} />
-                    <span className="brand-text font-weight-light">Smart PPM</span>
+                 <span className="brand-text" style={{color: 'white', fontWeight: 'bold'}}>Smart PPM</span>
+
                 </Link>
                 {/* Sidebar */}
                 <div className="sidebar">
@@ -63,10 +64,10 @@ export default class Menu extends Component {
          with font-awesome or any other icon font library */}
                             <li className="nav-item" onClick={this.removeClass}>
                                 <Link to="/sectionyear" className="nav-link" >
-                                    <i className="nav-icon fas fa-th" />
+                                    <i className="nav-icon fa fa-book" />
                                     <p>
                                         ปีการศึกษา
-                                <span className="right badge badge-danger">New</span>
+                                {/* <span className="right badge badge-danger">New</span> */}
                                     </p>
                                 </Link>
                             </li>
@@ -75,34 +76,34 @@ export default class Menu extends Component {
                                     <i className="nav-icon fas fa-child " />
                                     <p>
                                         นักเรียน
-                                <span className="right badge badge-danger">New</span>
+                                {/* <span className="right badge badge-danger">New</span> */}
                                     </p>
                                 </Link>
                             </li>
                             <li className="nav-item" onClick={this.removeClass}>
                                 <Link to="/group" className="nav-link">
-                                    <i className="nav-icon fas fa-child " />
+                                    <i className="nav-icon fa fa-group " />
                                     <p>
                                         กลุ่ม
-                                <span className="right badge badge-danger">New</span>
+                                {/* <span className="right badge badge-danger">New</span> */}
                                     </p>
                                 </Link>
                             </li>
                             <li className="nav-item" onClick={this.removeClass}>
                                 <Link to="/attendence" className="nav-link">
-                                    <i className="nav-icon fas fa-child " />
+                                    <i className="nav-icon fa fa-check-square-o" />
                                     <p>
                                         เช็คชื่อ
-                                <span className="right badge badge-danger">New</span>
+                                {/* <span className="right badge badge-danger">New</span> */}
                                     </p>
                                 </Link>
                             </li>
                             <li className="nav-item" onClick={this.removeClass}>
                                 <Link to="/attendence" className="nav-link">
-                                    <i className="nav-icon fas fa-child " />
+                                    <i className="nav-icon 	fa fa-institution" />
                                     <p>
                                         ความประพฤติ
-                                <span className="right badge badge-danger">New</span>
+                                {/* <span className="right badge badge-danger">New</span> */}
                                     </p>
                                 </Link>
                             </li>
@@ -134,7 +135,7 @@ export default class Menu extends Component {
                                     <i className="nav-icon fas fa-th" />
                                     <p>
                                         Simple Link
-                                 <span className="right badge badge-danger">New</span>
+                                 {/* <span className="right badge badge-danger">New</span> */}
                                     </p>
                                 </Link>
                             </li>

@@ -33,7 +33,7 @@ export default class index extends Component {
                                     <div className="col-sm-12 col-md-6" >
                                         <div className="form-group" style={{ textAlign: 'end', marginTop: '1rem', marginRight: '1rem' }}>
                                         <button className="btn btn-primary" onClick={() => this.props.history.push("/student/add")}>
-                                        <i className="fa fa-plus">&nbsp;&nbsp;</i>เพิ่มนักเรียน</button>
+                                        <i className="fa fa-user-plus">&nbsp;&nbsp;</i>เพิ่มนักเรียน</button>
                                         </div>
                                     </div>
                                 </div>
